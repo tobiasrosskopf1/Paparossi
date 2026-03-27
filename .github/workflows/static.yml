@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+ 
+<html class="scroll-smooth" lang="de"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+     tailwind.config = {
+       darkMode: "class",
+       theme: {
+         extend: {
+           colors: {
+             "inverse-on-surface": "#f3f0ea",
+             "outline": "#7f7667",
+             "primary-container": "#ceaa64",
+             "surface-tint": "#765a1c",
+             "primary-fixed": "#ffdea3",
+             "on-surface": "#1c1c18",
+             "secondary-container": "#f6e0bb",
+             "surface-dim": "#dcdad4",
+             "on-secondary-fixed-variant": "#53452a",
+             "on-secondary": "#ffffff",
+             "inverse-surface": "#31312d",
+             "on-tertiary-container": "#424242",
+             "on-error": "#ffffff",
+             "tertiary": "#5f5e5e",
+             "on-tertiary-fixed-variant": "#474747",
+             "on-error-container": "#93000a",
+             "on-primary-container": "#573e00",
+             "surface-container-low": "#f6f3ed",
+             "surface-container-highest": "#e5e2dc",
+             "on-secondary-fixed": "#251a04",
+             "inverse-primary": "#e7c179",
+             "on-tertiary-fixed": "#1b1c1c",
+             "error-container": "#ffdad6",
+             "surface-bright": "#fcf9f3",
+             "tertiary-fixed-dim": "#c8c6c6",
+             "surface-variant": "#e5e2dc",
+             "on-tertiary": "#ffffff",
+             "error": "#ba1a1a",
+             "primary-fixed-dim": "#e7c179",
+             "outline-variant": "#d1c5b4",
+             "primary": "#765a1c",
+             "on-primary-fixed-variant": "#5c4204",
+             "secondary": "#6c5c40",
+             "secondary-fixed-dim": "#d9c4a1",
+             "background": "#fcf9f3",
+             "on-background": "#1c1c18",
+             "tertiary-fixed": "#e4e2e1",
+             "surface-container-lowest": "#ffffff",
+             "surface-container-high": "#ebe8e2",
+             "secondary-fixed": "#f6e0bb",
+             "on-primary-fixed": "#261900",
+             "surface": "#fcf9f3",
+             "on-secondary-container": "#726245",
+             "on-primary": "#ffffff",
+             "tertiary-container": "#b1afae",
+             "on-surface-variant": "#4d4639",
+             "surface-container": "#f0eee8"
+           },
+           fontFamily: {
+             "headline": ["Plus Jakarta Sans"],
+             "body": ["Inter"],
+             "label": ["Inter"]
+           },
+           borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+         },
+       },
+     }
+   </script>
+<style>
+       .material-symbols-outlined {
+           font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+           display: inline-block;
+           line-height: 1;
+           text-transform: none;
+           letter-spacing: normal;
+           word-wrap: normal;
+           white-space: nowrap;
+           direction: ltr;
+       }
+       .luxury-gradient {
+           background: linear-gradient(135deg, #765a1c 0%, #ceaa64 100%);
+       }
+       .glass-nav {
+           background: rgba(252, 249, 243, 0.7);
+           backdrop-filter: blur(24px);
+       }
+   </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 glass-nav">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-bold tracking-tighter text-primary font-headline uppercase">Paparossi Fotobox</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-headline tracking-tight text-sm font-semibold uppercase text-primary border-b-2 border-primary-container pb-1 transition-all duration-300" href="#">Startseite</a>
+<a class="font-headline tracking-tight text-sm font-semibold uppercase text-on-surface/70 hover:text-primary transition-all duration-300" href="#">Leistungen</a>
+<a class="font-headline tracking-tight text-sm font-semibold uppercase text-on-surface/70 hover:text-primary transition-all duration-300" href="#">FAQs</a>
+<a class="font-headline tracking-tight text-sm font-semibold uppercase text-on-surface/70 hover:text-primary transition-all duration-300" href="#">Rechtliches</a>
+<a class="font-headline tracking-tight text-sm font-semibold uppercase text-on-surface/70 hover:text-primary transition-all duration-300" href="#">Kontakt</a>
+</div>
+<button class="luxury-gradient text-on-primary px-6 py-2 rounded-md font-headline tracking-tight text-sm font-semibold uppercase active:scale-95 duration-200 transition-all shadow-lg shadow-on-surface/5">
+               Jetzt anfragen
+           </button>
+</div>
+</nav>
+<main class="pt-16">
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="Joyful group of elegant friends laughing and posing inside a luxury photobooth with warm ambient lighting at a high-end evening gala" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADXZESSIQodcLCm7xvWaxpecYVBfHfUEgHK1wJnBl473elD7fb66fj6x0eswEWi_RYjzcWrS1T-7UiCmn-oXd5paUSOYSeZNE498GDoHMnrqiFYHJTDM09x8EPxVDw3apM_TdoI_BmhVKeSgLB8FVyWvoBMVNOYnmDH08U9U6MjWSDzGoTDPNcui4_k-DqsBxJQiPR1fjx_l3HIscya5S4x2FuhVhZ5C5MaJi1K-ksoubep4OwzFwwvO_mzahFaMygzdlJRSiVBfQa"/>
+<div class="absolute inset-0 bg-gradient-to-r from-on-surface/80 via-on-surface/40 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-8 w-full">
+<div class="max-w-2xl">
+<h1 class="font-headline text-5xl md:text-8xl font-bold text-white tracking-tighter leading-tight mb-6">
+                       Paparossi Fotobox
+                   </h1>
+<div class="w-24 h-1 luxury-gradient mb-8"></div>
+<p class="font-body text-xl md:text-2xl text-white/90 mb-10 max-w-lg leading-relaxed">
+                       das Highlight auf jeder Party - Momente für die Ewigkeit
+                   </p>
+<div class="flex flex-wrap gap-4">
+<button class="luxury-gradient text-on-primary px-8 py-4 rounded-md font-headline text-sm font-semibold uppercase tracking-widest hover:opacity-90 transition-all active:scale-95">
+                           Jetzt buchen
+                       </button>
+<button class="bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-md font-headline text-sm font-semibold uppercase tracking-widest hover:bg-white/20 transition-all">
+                           Pakete ansehen
+                       </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Highlights Bento Grid / Angebote Technik -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div>
+<span class="font-label text-primary tracking-widest uppercase text-sm font-bold block mb-4">Professionelles Equipment</span>
+<h2 class="font-headline text-4xl md:text-6xl font-bold tracking-tighter uppercase">Angebot Technik</h2>
+</div>
+<p class="max-w-md text-on-surface/70 leading-relaxed italic border-l-2 border-primary-container pl-6">
+                       "Höchste Qualität für Ihre Veranstaltung durch erstklassige Technik-Komponenten."
+                   </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- High-end Bento Card 1 -->
+<div class="md:col-span-2 bg-surface-container-lowest rounded-xl overflow-hidden relative group p-8 min-h-[400px] flex flex-col justify-end">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700" data-alt="Close-up of a high-quality instant photo strip emerging from a sleek wooden photobooth printer at a wedding" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdk_x7U5xvn2KTq-VOaXDtPEz8ZQooz2LtJL7aPDydxg5fXyod6gWUdQzposzbSu8lpN7amiORpOaK691wZYRmODt7vSKeWdJvphIqVHXdctb6Pdf7axQRi9AWLkW_lDqiucF-kLT1R5q89tniHp8lCnQEIFfH6T9MdrKDP2vD9jfBiW6CJCaQ9DUBFKmJz4cePnU68kRf5DATgiQj-qxigF2IHdiJntbIBsXN-fNiHrTx3eO_CwgOPMJctBjSUn6Sk-61JNjVwZs0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface via-on-surface/20 to-transparent opacity-60"></div>
+</div>
+<div class="absolute top-8 right-8 bg-primary/90 backdrop-blur-md text-on-primary px-4 py-2 rounded-full font-bold">175 €</div>
+<div class="relative z-10">
+<h3 class="font-headline text-3xl font-bold text-white mb-2">Profi-Drucker</h3>
+<p class="text-white/80 max-w-sm mb-6">High-Speed Thermosublimationsdrucker für Fotos in Laborqualität. Unbegrenzte Freude für Ihre Gäste.</p>
+<span class="material-symbols-outlined text-primary-container text-4xl">print</span>
+</div>
+</div>
+<!-- Bento Card 2 -->
+<div class="bg-primary p-8 rounded-xl flex flex-col justify-between text-on-primary relative overflow-hidden">
+<div class="absolute -top-4 -right-4 w-24 h-24 bg-white/10 rounded-full blur-2xl"></div>
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-5xl opacity-50">flash_on</span>
+<span class="font-bold text-xl">50 €</span>
+</div>
+<div>
+<h3 class="font-headline text-2xl font-bold mb-4">Studio-Blitz</h3>
+<p class="opacity-90 leading-relaxed mb-6">Perfekte Ausleuchtung für jedes Bild, egal wie dunkel die Location ist.</p>
+<a class="font-label uppercase tracking-widest text-xs border-b border-white/30 pb-1" href="#">Details</a>
+</div>
+</div>
+<!-- Bento Card 3 -->
+<div class="bg-surface-container-high p-8 rounded-xl flex flex-col justify-between border border-outline-variant/10 relative overflow-hidden">
+<div class="flex justify-between items-start mb-4">
+<span class="material-symbols-outlined text-primary text-4xl">background_replace</span>
+<span class="font-bold text-xl text-primary">40 €</span>
+</div>
+<div>
+<h3 class="font-headline text-2xl font-bold mb-4">Hintergrundsystem</h3>
+<p class="text-on-surface/70 leading-relaxed">Verschiedene Designs zur Auswahl, die perfekt zu Ihrer Event-Deko passen.</p>
+</div>
+<div class="flex -space-x-3 mt-6">
+<div class="w-12 h-12 rounded-full border-2 border-surface-container-lowest overflow-hidden bg-slate-200">
+<img class="w-full h-full object-cover" data-alt="close up colorful party props" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKszlNe0vgNZfTtMln8JAWjvZB4PMQkCwZ99OjLzExYzcnU9n_phEFary912Z9xPEBBGJNQDCjtRznrw6Nyt87HmJyMIRJHOV8HReVsLsxuSSepUz-pK79ruuJLZ5JbmYe7l9fWU40V3bftaEKa6arZYJRqfQhvRWUoRct7XMmeohmzEpjob4DCg8aASAy5OVITNGvKDy3FV8QJ03fXH8PHBkhieyRf0QyJOR-rRv7tD9nHkZ2HWUirpBLf0s6Amf-1W5p91J-alt1"/>
+</div>
+<div class="w-12 h-12 rounded-full border-2 border-surface-container-lowest overflow-hidden bg-slate-300">
+<img class="w-full h-full object-cover" data-alt="sparkling party lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCL2S1n1oOlQqF3l8TuOI8tVU9FXxEDTZwV5Ix71SQDE2ijWF2bVuJk5dhv50gbtF31r4KZ1dL8kJpQtaFxT5dPWqmpLhBxKP_Z_dZ7aH-UOT6orQRPFng5Po1wN0i_mxD27AJk8LQI0OQ0Omlnu02ZNLBB6ZESN3TWeWy9w0CsWtL8lnQz4ZxcKLtx2MzdFlAwV23BrhUs2AjunZyUd8Cva_sdGbPj0nq4rdrpSZEtYf-nDOe2dV-5s_-lR-UL0ZVVUNygvO_r0-x6"/>
+</div>
+<div class="w-12 h-12 rounded-full border-2 border-surface-container-lowest bg-primary-container flex items-center justify-center text-on-primary-container font-bold text-xs">+8</div>
+</div>
+</div>
+<!-- Bento Card 4 -->
+<div class="md:col-span-2 bg-surface-container-lowest rounded-xl p-8 border border-outline-variant/10 flex flex-col md:flex-row items-center gap-8">
+<div class="w-full md:w-1/2">
+<h3 class="font-headline text-2xl font-bold mb-4">Kameratechnik &amp; Software</h3>
+<p class="text-on-surface/70 mb-6">Wir setzen auf digitale Spiegelreflexkameras von Canon für gestochen scharfe Aufnahmen.</p>
+<ul class="space-y-3">
+<li class="flex items-center gap-3 text-sm font-medium text-on-surface/80">
+<span class="material-symbols-outlined text-primary text-xl">check_circle</span> DSLR Kamera (Canon)
+                               </li>
+<li class="flex items-center gap-3 text-sm font-medium text-on-surface/80">
+<span class="material-symbols-outlined text-primary text-xl">check_circle</span> Live-View Vorschau
+                               </li>
+<li class="flex items-center gap-3 text-sm font-medium text-on-surface/80">
+<span class="material-symbols-outlined text-primary text-xl">check_circle</span> Professionelle Fotobox-Software
+                               </li>
+</ul>
+</div>
+<div class="w-full md:w-1/2 h-48 md:h-full bg-surface-container rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Modern minimalist photobooth stand with soft ring light and high-end camera lens setup in a clean white space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRifrRgrJI20ZHE5OWYCLwemMMQg4J9UxM4yqPYJMhQnuQwBymdkfh0J0HPiRgh17iQlmBxfPowQJ4t5fkhByTdGs1RutFqa-2EkrVmDO__l6rUuDL1gg_WAtATs71-bSCsH2U6Pwtb0K4WqkWRolFY1EO4ctqt9ioAeRxr0e4PSdyW_9MFD2SXejh2l1OxTaQw-FRsz1wFVQu-lkyD99-GWNoubmyR6C1zjpcpiAFTljNCihhgmZl3r47AnjYecXkZ48ff-QtIh-S"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Process Section -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-20">
+<span class="font-label text-primary tracking-widest uppercase text-sm font-bold block mb-4">Der Weg zum Erfolg</span>
+<h2 class="font-headline text-4xl md:text-5xl font-bold tracking-tighter">So einfach mieten Sie bei uns</h2>
+</div>
+<div class="relative">
+<!-- Decorative Line -->
+<div class="hidden lg:block absolute top-1/2 left-0 w-full h-0.5 bg-outline-variant/20 -translate-y-1/2 z-0"></div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-16 relative z-10">
+<!-- Step 1 -->
+<div class="flex flex-col items-center text-center">
+<div class="w-20 h-20 bg-surface-container-lowest rounded-full flex items-center justify-center mb-8 shadow-xl shadow-on-surface/5 border border-outline-variant/10">
+<span class="material-symbols-outlined text-3xl text-primary" style="font-variation-settings: 'FILL' 1;">edit_calendar</span>
+</div>
+<h3 class="font-headline text-xl font-bold mb-4">Anfrage</h3>
+<p class="text-on-surface/60 leading-relaxed px-4">Stellen Sie eine unverbindliche Anfrage für Ihren Wunschtermin über unser Kontaktformular.</p>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col items-center text-center">
+<div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center mb-8 shadow-xl shadow-primary/20">
+<span class="material-symbols-outlined text-3xl text-on-primary">inventory_2</span>
+</div>
+<h3 class="font-headline text-xl font-bold mb-4">Vorbereitung</h3>
+<p class="text-on-surface/60 leading-relaxed px-4">Wir stimmen die Details mit Ihnen ab und bereiten Ihr individuelles Fotolayout vor.</p>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col items-center text-center">
+<div class="w-20 h-20 bg-surface-container-lowest rounded-full flex items-center justify-center mb-8 shadow-xl shadow-on-surface/5 border border-outline-variant/10">
+<span class="material-symbols-outlined text-3xl text-primary">auto_awesome</span>
+</div>
+<h3 class="font-headline text-xl font-bold mb-4">Event-Tag</h3>
+<p class="text-on-surface/60 leading-relaxed px-4">Wir kümmern uns um den reibungslosen Ablauf, damit Sie und Ihre Gäste einfach nur Spaß haben können.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section with Glassmorphism -->
+<section class="py-24 px-8">
+<div class="max-w-5xl mx-auto luxury-gradient rounded-2xl p-12 md:p-20 text-center relative overflow-hidden shadow-2xl shadow-primary/20">
+<div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
+<div class="absolute bottom-0 left-0 w-48 h-48 bg-black/5 rounded-full translate-y-1/2 -translate-x-1/2 blur-2xl"></div>
+<div class="relative z-10">
+<h2 class="font-headline text-3xl md:text-5xl font-bold text-white mb-8 tracking-tight uppercase">Bereit für Ihr Highlight?</h2>
+<p class="text-white/90 text-lg mb-12 max-w-2xl mx-auto font-body">
+                       Sichern Sie sich jetzt die Paparossi Fotobox für Ihre nächste Feier. Wir freuen uns darauf, Teil Ihrer unvergesslichen Momente zu sein.
+                   </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="bg-white text-primary px-10 py-4 rounded-md font-headline font-bold uppercase tracking-widest hover:bg-surface-container-lowest transition-all">
+                           Unverbindliches Angebot
+                       </button>
+<button class="bg-primary-fixed-dim/30 border border-white/30 text-white px-10 py-4 rounded-md font-headline font-bold uppercase tracking-widest hover:bg-white/10 transition-all">
+                           Termine prüfen
+                       </button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low dark:bg-[#12120f] w-full py-12 px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto border-t border-outline-variant/15 pt-12">
+<!-- Brand Column -->
+<div class="space-y-6">
+<div class="text-xl font-bold text-on-surface dark:text-surface-bright uppercase">Paparossi Fotobox</div>
+<p class="text-on-surface/50 dark:text-surface-bright/50 text-xs leading-relaxed max-w-xs">
+                   Ihr Experte für professionellen Fotobox-Verleih. Wir machen Ihre Party zum unvergesslichen Erlebnis.
+               </p>
+</div>
+<!-- Quick Links -->
+<div class="flex flex-col gap-4">
+<h4 class="font-label text-primary dark:text-primary-container text-xs tracking-widest uppercase font-bold">Navigation</h4>
+<a class="text-on-surface/50 dark:text-surface-bright/50 text-xs hover:text-primary transition-colors uppercase tracking-widest" href="#">Startseite</a>
+<a class="text-on-surface/50 dark:text-surface-bright/50 text-xs hover:text-primary transition-colors uppercase tracking-widest" href="#">Leistungen</a>
+<a class="text-on-surface/50 dark:text-surface-bright/50 text-xs hover:text-primary transition-colors uppercase tracking-widest" href="#">FAQs</a>
+</div>
+<!-- More Links -->
+<div class="flex flex-col gap-4">
+<h4 class="font-label text-primary dark:text-primary-container text-xs tracking-widest uppercase font-bold">Rechtliches</h4>
+<a class="text-on-surface/50 dark:text-surface-bright/50 text-xs hover:text-primary transition-colors uppercase tracking-widest" href="#">Impressum</a>
+<a class="text-on-surface/50 dark:text-surface-bright/50 text-xs hover:text-primary transition-colors uppercase tracking-widest" href="#">Datenschutz</a>
+<a class="text-on-surface/50 dark:text-surface-bright/50 text-xs hover:text-primary transition-colors uppercase tracking-widest" href="#">AGB</a>
+</div>
+<!-- Contact/Social -->
+<div class="flex flex-col gap-4">
+<h4 class="font-label text-primary dark:text-primary-container text-xs tracking-widest uppercase font-bold">Kontakt</h4>
+<p class="text-on-surface/50 dark:text-surface-bright/50 text-xs uppercase tracking-widest">Fotoboxverleih Roßkopf</p>
+<p class="text-on-surface/50 dark:text-surface-bright/50 text-xs uppercase tracking-widest">Bayern, Deutschland</p>
+<div class="flex gap-4 mt-2">
+<span class="material-symbols-outlined text-primary text-lg cursor-pointer hover:opacity-70">share</span>
+<span class="material-symbols-outlined text-primary text-lg cursor-pointer hover:opacity-70">camera</span>
+<span class="material-symbols-outlined text-primary text-lg cursor-pointer hover:opacity-70">mail</span>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-outline-variant/10">
+<p class="text-on-surface/50 dark:text-surface-bright/50 text-xs tracking-widest uppercase text-center">
+               © 2024 Paparossi Fotobox - Fotoboxverleih Roßkopf. Alle Rechte vorbehalten.
+           </p>
+</div>
+</footer>
+</body></html>
